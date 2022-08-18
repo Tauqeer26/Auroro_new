@@ -1,0 +1,178 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <!-- Custom CSS -->
+      <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+      <!-- Bootstrap CSS -->
+      <link
+         href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+         rel="stylesheet"
+         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+         crossorigin="anonymous"
+         />
+      <!-- Font -->
+      <link
+         href="http://fonts.cdnfonts.com/css/proxima-nova-2"
+         rel="stylesheet"
+         />
+      <title>AURORA</title>
+   </head>
+<body id="top" data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
+
+     <div class="container">
+     <!-- MENU -->
+     <header>
+     <section class="navbar navbar-default navbar-static-top" role="navigation" style="align-items: center;">
+          <div class="container">
+
+               <div class="navbar-header">
+                    <!-- <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> -->
+                         <span class="icon icon-bar"></span>
+                         <span class="icon icon-bar"></span>
+                         <span class="icon icon-bar"></span>
+                    </button>
+
+                    <!-- lOGO TEXT HERE -->
+
+               </div>
+
+               <!-- MENU LINKS -->
+               <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                         <li><a href="/" class="smoothScroll">Home</a></li>
+                         <li><a href="viewDataBase" class="smoothScroll">View gallery</a></li>
+                    </ul>
+               </div>
+               <div class="row">
+                    <div class="col px-4 pt-4">
+                       <div class="d-flex justify-content-center">
+                          <!-- <h1 class="h1 my-4">Aurora organics</h1> -->
+                          <img src="media/logo-1.png" alt="" srcset="">
+                       </div>
+                       <div class="d-flex justify-content-center mt-4">
+                          <p class="h4">Take Care Of Your Skin</p>
+                       </div>
+                       <div class="d-flex justify-content-center">
+                          <p class="h6 p-4 mx-4">
+                             The system provides CAD (computer-aided diagnosis). We created a model for Asian skin right now it will recommend you our products relating to the condition of your skin. 
+                             We plan to expand this solution to the general skin tone and add more dermatological diseases to it.
+                             It's a beta version so it's better if you consult with our skin expert as well.
+                          </p>
+                       </div>
+                    </div>
+                 </div>
+
+          </div>
+     </section>
+</header>
+</div>
+
+
+     <!-- HOME -->
+
+
+<div class="container">
+     {% block content%}
+     {% endblock %}
+    
+</div>
+
+     <!-- FOOTER -->
+     <footer data-stellar-background-ratio="5">
+          <div class="container">
+               <div class="row">
+
+                    
+
+                    <div class="col-md-12 col-sm-12 border-top">
+                         <div class="col-md-4 col-sm-6">
+                              <div class="copyright-text"> 
+                                   <p>Copyright </p>
+                              </div>
+                         </div>
+                         <div class="col-md-6 col-sm-6">
+                              <div class="footer-link"> 
+                                   
+                                   <a href="#">Save</a>
+                              </div>
+                         </div>
+                         <div class="col-md-2 col-sm-2 text-align-center">
+                              <div class="angle-up-btn"> 
+                                  <a href="#top" class="smoothScroll wow fadeInUp" data-wow-delay="1.2s"><i class="fa fa-angle-up"></i></a>
+                              </div>
+                         </div>   
+                    </div>
+                    
+               </div>
+          </div>
+     </footer>
+
+     <!-- SCRIPTS -->
+     <script  src="{% static 'js/jquery.js' %}"></script>
+     <script  src="{% static 'js/bootstrap.min.js' %}"></script>
+     <script  src="{% static 'js/jquery.sticky.js' %}"></script>
+     <script  src="{% static 'js/jquery.stellar.min.js' %}"></script>
+     <script  src="{% static 'js/wow.min.js' %}"></script>
+     <script  src="{% static 'js/smoothscroll.js' %}"></script>
+     <script  src="{% static 'js/owl.carousel.min.js' %}"></script>
+     <script  src="{% static 'js/custom.js' %}"></script>
+     <!-- Option 1: Bootstrap Bundle with Popper -->
+     <script
+     src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+     crossorigin="anonymous"
+     ></script>
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <script
+     src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+     integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+     crossorigin="anonymous"
+     ></script>
+  <script
+     src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+     integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+     crossorigin="anonymous"
+     ></script>
+  <script
+     src="https://code.jquery.com/jquery-3.6.0.min.js"
+     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+     crossorigin="anonymous"></script>
+  <!-- Optional JavaScript; choose one of the two! -->
+     <!-- <script src="C:/Users/user/Desktop/Files/Django_Xray/Xray-20220619T113747Z-001/Xray/X-ray/ImageClassification_DjangoApp-master/ImageClassification_DjangoApp-master/firstApp/static/js/script.js"></script> -->
+
+
+</body>
+</html>
+
+<script>
+          const inputFile = document.getElementById("inputFile")
+          const previewContainer = document.getElementById("imagePreview")
+          const previewImage = document.querySelector(".image-preview__image")
+          const previewDefaultText = document.querySelector(".image-preview__default-text")
+          const buttonHide = document.getElementById("btn-hide")
+
+          inputFile.addEventListener("change",function(){
+          const file = this.files[0]
+          console.log(file);
+
+          if(file){
+          const reader = new FileReader();
+          previewDefaultText.style.display = "none"
+          previewImage.style.display = "block";
+          previewImage.style.border = "none";
+          buttonHide.style.display = "block";
+
+          reader.addEventListener("load",function(){
+               previewImage.setAttribute("src",this.result)
+          })
+          reader.readAsDataURL(file);
+          }else{
+          previewDefaultText.style.display = null;
+          previewImage.style.display = null;
+          }
+          }) 
+</script>

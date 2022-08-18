@@ -1,0 +1,44 @@
+{% extends 'headerPage.html' %}
+
+{% block content%}
+
+    
+
+    
+    <br>
+   
+    <form method="post" enctype="multipart/form-data" action="predictImage">
+  
+ {% csrf_token %}
+ <!-- <div class="col-md-4 col-sm-4"><label for="fname">Please Upload Your data:</label> </div> <input name="filePath" type="file"><br><br>-->
+ <br>
+ <div class="row">
+    <div class="col-6 px-4">
+       <p class="h5 px-4 mx-4">
+          Drop your image below so we can recommend you the best of all products.
+       </p>
+       <div class="mb-3 px-4">
+          <label for="formFile" class="form-label"></label>
+          <input class="form-control" type="file" id="inputFile" name="filePath">
+       </div>
+    </div>
+    <div class="col-6 px-4">
+      <div class="image-preview" id="imagePreview">
+         <img src="" alt="Image Preview" class="image-preview__image">
+         <span class="image-preview__default-text">Image Preview</span>
+      </div>
+      <button type="submit" class="btn btn-dark" id="btn-hide">SUBMIT</button>
+   </div>  
+ </div> HOME 
+ 
+ <!--<input type="submit" value="Submit" ></div>-->
+
+ <h2>This Classified Image is  {{predictedLabel}}</h2>
+ <img src={{filePathName}} alt=''>
+ {{filePathName}}
+ 
+</form>
+<br>
+
+
+{% endblock %}

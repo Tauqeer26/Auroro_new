@@ -1,0 +1,33 @@
+body {
+    font-family: "Proxima Nova", sans-serif !important;
+  }
+  .h4 {
+    /* font-size: 16px !important; */
+    /* font-weight: 700; */
+  }
+  
+  .image-preview{
+    width: 500px;
+    min-height: 300px;
+    border: 2px solid #ddd;
+    /* margin-top: 15px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #ccc;
+    overflow: hidden;
+  }
+  
+  .image-preview__image{
+    display: none;
+    width: 100%;
+    height: 100%;
+  }
+  
+  #btn-hide{
+    display: none;
+    margin-bottom: 10px;
+    width: 500px;
+    letter-spacing: 1.8;
+  }
