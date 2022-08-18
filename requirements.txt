@@ -16,6 +16,9 @@ grpcio==1.34.0
 h5py==3.1.0
 idna==2.10
 importlib-metadata==3.3.0
+Keras==2.4.0
+Keras-Applications==1.0.8
+Keras-Preprocessing==1.1.2
 Markdown==3.3.3
 numpy==1.19.4
 oauthlib==3.1.0
